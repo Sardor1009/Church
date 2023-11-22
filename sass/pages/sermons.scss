@@ -1,8 +1,9 @@
 @import "../base/global";
-@import "../base/variables";
 @import "../base/reset";
-@import "../layout/navigation";
+@import "../base/fonts";
+@import "../base/variables";
 
-.sermons-home {
-  
+.sermon-home {
+  display: block;
+  background-image: url(../../assets/images/sermons/sermon-home-img.png) lightgray 0.35px -152.35px / 100% 231.481% no-repeat;
 }
