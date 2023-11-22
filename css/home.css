@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
-* ,
+
+*,
 *::after,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .container {
   max-width: 1320px;
   margin-left: auto;
@@ -15,19 +19,10 @@
   padding-right: 20px;
 }
 
-<<<<<<< HEAD
-a {
-  text-decoration: none;
-}
-
 ul {
   list-style-type: none;
-=======
-ul {
- list-style-type: none;
- }
- 
+}
+
 a {
   text-decoration: none;
->>>>>>> refs/remotes/origin/main
 }

@@ -19,14 +19,18 @@
   padding-right: 20px;
 }
 
+<<<<<<< HEAD
 a {
   text-decoration: none;
 }
 
+=======
+>>>>>>> refs/remotes/origin/main
 ul {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -47,10 +51,13 @@ ul {
   padding-right: 20px;
 }
 
+=======
+>>>>>>> refs/remotes/origin/main
 a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 ul {
   list-style-type: none;
 }
@@ -210,3 +217,6 @@ ul {
 .contact-btn a {
   color: #1C1D28;
 }
+=======
+@impo;
+>>>>>>> refs/remotes/origin/main
