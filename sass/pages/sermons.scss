@@ -2,8 +2,31 @@
 @import "../base/reset";
 @import "../base/fonts";
 @import "../base/variables";
+@import "../layout/container";
 
-.sermon-home {
-  display: block;
-  background-image: url(../../assets/images/sermons/sermon-home-img.png) lightgray 0.35px -152.35px / 100% 231.481% no-repeat;
+.sermon__image{
+  height: 432px;
+  background-color: red;
+  background: url(../../assets/images/sermons/sermon-home-img.png) no-repeat;
+  width: 100%;
+  background-size: cover;
+  .sermon__home__text__h1 {
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    color: $black-color;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+  }
+  .sermon__home__text__desc {
+    color: $black-color;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 }
