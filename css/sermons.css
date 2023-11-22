@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
 * {
   margin: 0;
@@ -28,6 +29,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +61,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .sermon__image {

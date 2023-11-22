@@ -4,26 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHURCH | ISLOMOV</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
+    <!---------------------- header for everybody |  begin copying-------------- -->
     <header>
-        <nav class="container nav">
-            <img src="./image/home/headerLogo.svg" alt="headerLogo">
-            <ul class="header__items">
-                <li class="header__things"><a href="#" class="header__links">item 1</a></li>
-                <li class="header__things"><a href="#" class="header__links">item 2</a></li>
-                <li class="header__things"><a href="#" class="header__links">item 3</a></li>
-                <li class="header__things"><a href="#" class="header__links">item 4</a></li>
-            </ul>
-            <button>CONTACT US</button>
-        </nav>
+      <nav class="container nav">
+        <!-- <div class="nav__parts"> -->
+        <img class="nav__logo" src="./image/home/headerLogo.svg" alt="headerLogo" />
+        <ul class="nav__items">
+          <li class="nav__things">
+            <a href="#home" class="nav__links">Home</a>
+          </li>
+          <li class="nav__things">
+            <a href="#about" class="nav__links">About</a>
+          </li>
+          <li class="nav__things">
+            <a href="#sermon" class="nav__links">Sermon</a>
+          </li>
+          <li class="nav__things">
+            <a href="#blog" class="nav__links">Blog</a>
+          </li>
+        </ul>
+        <div class="nav__buttons">
+          <button id="navbar-open">
+            <img src="./image/home/open.svg" alt="open" />
+          </button>
+          <button class="nav__btn">CONTACT US</button>
+        </div>
+        <!-- </div> -->
+      </nav>
     </header>
+    <ul id="navbar-responsive" class="navbar__items">
+      <button id="navbar-close">
+        <img src="./image/home/close.svg" alt="close" />
+      </button>
+      <li class="navbar__things">
+        <a href="#home" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__things">
+        <a href="#about" class="navbar__links">About</a>
+      </li>
+      <li class="navbar__things">
+        <a href="#sermon" class="navbar__links">Sermon</a>
+      </li>
+      <li class="navbar__things">
+        <a href="#blog" class="navbar__links">Blog</a>
+      </li>
+    </ul>
+    <!-- -------------------header end|| end copying----------------------------------- -->
     <main>
-
+      
     </main>
-    <footer>
+    <footer></footer>
 
-    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
