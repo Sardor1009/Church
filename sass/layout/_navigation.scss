@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap');
 @import "../base/variables";
+@import "../base/global";
 @import "../base/reset";
 .navbar {
   display: flex;
-  align-items: center;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1580px;
   padding: 27px 110px;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  align-items: center;
   background-color: #000;
 }
 
