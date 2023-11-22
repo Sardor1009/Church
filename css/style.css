@@ -19,14 +19,18 @@
   padding-right: 20px;
 }
 
+<<<<<<< HEAD
 a {
   text-decoration: none;
 }
 
+=======
+>>>>>>> 6ef90f34d3653df446bd0e3fcabfe9028d278e92
 ul {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -47,10 +51,13 @@ ul {
   padding-right: 20px;
 }
 
+=======
+>>>>>>> 6ef90f34d3653df446bd0e3fcabfe9028d278e92
 a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 ul {
   list-style-type: none;
 }
@@ -210,3 +217,6 @@ ul {
 .contact-btn a {
   color: #1C1D28;
 }
+=======
+@impo;
+>>>>>>> 6ef90f34d3653df446bd0e3fcabfe9028d278e92
