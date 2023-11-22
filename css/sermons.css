@@ -29,7 +29,7 @@ a {
 }
 
 button {
-  background: transparent;
+background: transparent;
   border: none;
   cursor: pointer;
 }
@@ -42,9 +42,7 @@ button {
   padding-right: 20px;
 }
 
-button {
-  cursor: pointer;
-}
+
 
 .sermon__image {
   height: 432px;
@@ -52,7 +50,7 @@ button {
   width: 100%;
 }
 .sermon__image .sermon__home__text {
-  padding: 160px 0px 175px;
+  padding: 165px 100px 175px 0;
 }
 @media (max-width: 450px) {
   .sermon__image .sermon__home__text {
