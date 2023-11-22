@@ -71,6 +71,8 @@ button {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #0D0D0D;
   padding: 12px 0;
 }
@@ -213,4 +215,66 @@ header {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   border-radius: 10px;
+}
+
+.main__home {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../../image/home/Church/https_/www.pexels.com/photo/woman-in-orange-coat-with-black-and-brown-scarf-5418305.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 128px;
+}
+.main__home h6,
+.main__home h2, .main__home__p {
+  max-width: 592px;
+  color: #FFFFFF;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main__home h6 {
+  padding-top: 128px;
+}
+.main__home h2 {
+  font-size: 64px;
+  letter-spacing: -0.64px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .main__home h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.main__home__p {
+  font-weight: normal;
+  line-height: 24px;
+}
+.main__home__btn {
+  border-radius: 12px;
+  background: #FFD2A4;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  padding: 20px 48px;
+  color: #1C1D28;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 64px;
+}
+.main__home__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

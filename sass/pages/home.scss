@@ -1,2 +1,51 @@
 @import "../base/global";
 @import "../layout/header";
+
+.main__home {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../../image/home/Church/https_/www.pexels.com/photo/woman-in-orange-coat-with-black-and-brown-scarf-5418305.png")
+    no-repeat;
+  background-size: cover;
+  padding-bottom: 128px;
+  h6,
+  h2,
+  &__p {
+    max-width: 592px;
+    color: $white-color;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h6 {
+    padding-top: 128px;
+  }
+  h2 {
+    font-size: 64px;
+    letter-spacing: -0.64px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    @media (max-width: 500px) {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  &__p {
+    font-weight: normal;
+    line-height: 24px;
+  }
+  &__btn {
+    @include btn;
+    margin-bottom: 64px;
+  }
+  &__line {
+    @include dflex($justify: none, $gap: 15px);
+  }
+}
+
+// ---------relevant started-------////
+
+

@@ -1,5 +1,7 @@
 @import "../base/global";
 header {
+  position: fixed;
+  width: 100%;
   background-color: $black--header;
   padding: 12px 0;
 }
