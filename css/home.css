@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  background-color: #0D0D0D;
+  padding: 12px 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__logo {
+  max-width: 132px;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  .nav__logo {
+    width: 90px;
+  }
+}
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 700px) {
+  .nav ul {
+    display: none;
+  }
+}
+.nav__links {
+  color: #FFFFFF;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+}
+.nav__btn {
+  border-radius: 12px;
+  background: #FFD2A4;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  padding: 20px 48px;
+  color: #1C1D28;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 16px;
+}
+@media (max-width: 400px) {
+  .nav__btn {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+}
+.nav__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar-responsive {
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+#navbar-responsive li {
+  width: calc(100vw - 80px);
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #FFD2A4;
+}
+#navbar-responsive li a {
+  color: #0D0D0D;
+  font-weight: 800;
+}
+#navbar-responsive li:hover a {
+  color: orange;
+}
+
+#navbar-open {
+  display: none;
+}
+@media (max-width: 700px) {
+  #navbar-open {
+    display: inline-block;
+  }
+}
+
+#navbar-close {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+#navbar-close:hover {
+  padding: 10px 15px;
+  background-color: #FFD2A4;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-radius: 10px;
+}
