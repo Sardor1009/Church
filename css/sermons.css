@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +29,8 @@ a {
 }
 
 button {
+  background: transparent;
+  border: none;
   cursor: pointer;
 }
 
@@ -37,7 +40,7 @@ button {
   width: 100%;
 }
 .sermon__image .sermon__home__text {
-  padding: 160px 0px 175px;
+  padding: 160px 100px 175px;
 }
 @media (max-width: 450px) {
   .sermon__image .sermon__home__text {

@@ -1,1 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
+@import "../base/variables";
 
+
+@mixin btn() {
+  border-radius: 12px;
+  background: $primary-color;
+  backdrop-filter: blur(40px);
+  padding: 20px 48px;
+  color: $black-color;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 16px; 
+}
+@mixin dflex ($justify: space-between, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  gap: $gap;
+  align-items: center;
+}
