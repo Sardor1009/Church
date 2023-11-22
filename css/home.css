@@ -278,3 +278,25 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.relevant {
+  padding-top: 128px;
+}
+.relevant__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.relevant h5,
+.relevant h3 {
+  color: var(--Black, #161722);
+  text-align: center;
+  /* Heading h2 */
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}

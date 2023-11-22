@@ -1,23 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Rooto+Condensed&family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -195,6 +177,9 @@ button {
   line-height: 24px;
   color: #1C1D28;
 }
+.upcoming__main .upcoming__main__text .upcoming__items img {
+  padding-right: 16px;
+}
 .upcoming__main .upcoming__main__text .upcoming__btn {
   margin-top: 32px;
   text-align: center;
@@ -221,6 +206,104 @@ button {
 .upcoming__main .man-woman {
   width: 100%;
   background-size: cover;
+}
+
+.view-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1C1D28;
+  line-height: 32px;
+}
+.view-all__head-text {
+  margin: 128px 0px 64px 0px;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  color: #1C1D28;
+  text-transform: uppercase;
+}
+.view-all__main__text {
+  padding: 80px 40px;
+  text-align: start;
+  background-color: #fff5eb;
+}
+.view-all__main__text .p-one {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  background: var(--Gradient, linear-gradient(110deg, #a54e2b -53.83%, #dc9853 62.61%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.view-all__main__text h5 {
+  margin: 16px 0px;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  color: #1C1D28;
+  text-transform: uppercase;
+}
+.view-all__main__text .p-two {
+  max-width: 214px;
+  margin-bottom: 30px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C1D28;
+  line-height: 24px;
+}
+
+.view-all__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1C1D28;
+}
+.view-all__items img {
+  padding-right: 16px;
+}
+
+.view-all__cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1285px) {
+  .view-all__cards {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 725px) {
+  .view-all__cards {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media (max-width: 415px) {
+  .view-all__cards .view-all__main__text {
+    text-align: center;
+  }
 }
 
 * {
@@ -609,7 +692,12 @@ header {
 }
 
 .main__home {
-  background-image: url("../../image/home/Church/https_/www.pexels.com/photo/woman-in-orange-coat-with-black-and-brown-scarf-5418305.png");
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../../image/home/Church/https_/www.pexels.com/photo/woman-in-orange-coat-with-black-and-brown-scarf-5418305.png") no-repeat;
+  background-size: cover;
   padding-bottom: 128px;
 }
 .main__home h6,
@@ -629,6 +717,12 @@ header {
   letter-spacing: -0.64px;
   margin-top: 16px;
   margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .main__home h2 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 .main__home__p {
   font-weight: normal;
@@ -657,6 +751,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.relevant {
+  padding-top: 128px;
+}
+.relevant__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 * {
@@ -802,6 +905,9 @@ button {
   line-height: 24px;
   color: #1C1D28;
 }
+.upcoming__main .upcoming__main__text .upcoming__items img {
+  padding-right: 16px;
+}
 .upcoming__main .upcoming__main__text .upcoming__btn {
   margin-top: 32px;
   text-align: center;
@@ -828,4 +934,102 @@ button {
 .upcoming__main .man-woman {
   width: 100%;
   background-size: cover;
+}
+
+.view-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1C1D28;
+  line-height: 32px;
+}
+.view-all__head-text {
+  margin: 128px 0px 64px 0px;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  color: #1C1D28;
+  text-transform: uppercase;
+}
+.view-all__main__text {
+  padding: 80px 40px;
+  text-align: start;
+  background-color: #fff5eb;
+}
+.view-all__main__text .p-one {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  background: var(--Gradient, linear-gradient(110deg, #a54e2b -53.83%, #dc9853 62.61%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.view-all__main__text h5 {
+  margin: 16px 0px;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  color: #1C1D28;
+  text-transform: uppercase;
+}
+.view-all__main__text .p-two {
+  max-width: 214px;
+  margin-bottom: 30px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C1D28;
+  line-height: 24px;
+}
+
+.view-all__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1C1D28;
+}
+.view-all__items img {
+  padding-right: 16px;
+}
+
+.view-all__cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1285px) {
+  .view-all__cards {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 725px) {
+  .view-all__cards {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media (max-width: 415px) {
+  .view-all__cards .view-all__main__text {
+    text-align: center;
+  }
 }
