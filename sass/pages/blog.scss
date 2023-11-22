@@ -1,0 +1,169 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+.blog__body{
+    background: #F5F2F0;
+}
+.blog{
+    padding-top: 100px ;
+
+    &__p{
+        text-align: center;
+        @include text-style;
+    }
+
+    &__h2{
+        text-align: center;
+        @include text-style (48px, 700, 64px );
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-bottom: 64px;
+
+    }
+
+    &__doing{
+        @include flex (grid,flex-start );
+        padding: 56px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+        background-color: #fff;
+
+        &__left{
+            img{
+                width: 100%;
+            }
+        }
+
+        &__reight{
+            &__label{
+                @include flex;
+                @include text-style (16px, 400,normal);
+            }
+            h4{
+                @include text-style (32px, 700, 44px);
+                letter-spacing: -0.32px;
+                text-transform: uppercase;
+                margin: 12px 0 16px;
+            }
+
+            p{
+                margin-bottom: 32px;
+                @include text-style ;
+                opacity: 0.78;
+            }
+
+            button{
+                @include btn;
+                @include text-style (16px, 400, 16px);
+                text-transform: uppercase;
+            }
+        }
+
+        @media (max-width:1100px ) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+
+
+.post{
+    h2{
+        margin: 128px 0 64px;
+        @include text-style (48px, 700, 64px);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.48px;
+    }
+
+    &__box{
+
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        &__card{
+            position: relative;
+            overflow: hidden;
+            max-width: 302px;
+            width: 100%;
+            height: 360px;
+            padding: 48px 32px;
+            border-radius: 25px;
+            background-color: #fff;
+
+            &__content{
+                position: relative;
+                z-index: 1;
+    
+                div{
+                    background:$lnr-grd;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 16px;
+                    cap{
+                        @include text-style (12px, 700, normal);
+                        letter-spacing: 0.96px;
+                        text-transform: uppercase;
+                    };
+                    
+                }
+                h5{
+                    @include text-style (24px, 700, normal);
+                    letter-spacing: -0.24px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                &__about{
+                    @include text-style ;
+                    opacity: 0.78;
+                    margin-bottom: 48px;
+                }
+    
+                label{
+                    @include text-style (18px, 400, normal);
+                }
+    
+                &__data{
+                    @include text-style (18px, 400, 24px);
+                }
+    
+                &__bgc{
+                    z-index: 1;
+                    height: 100px;
+                    width: 100px;
+                    background-color: #FFD0A0;;
+                }
+            }
+        }
+
+
+        &__card::after{
+            bottom: -100px;
+            right: -100px;
+        }
+
+        &__card::before{
+            top: -100px;
+            left: -100px;
+        }
+
+        &__card::after, &__card::before{
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            transition: 0.5s;
+            background-color: #FFD0A0;;
+        }
+
+        &__card:hover::after, &__card:hover::before{
+            width: 600px;
+            height: 600px;
+        }
+    }
+}
