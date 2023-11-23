@@ -73,6 +73,8 @@
 
 
 .post{
+
+    margin-bottom: 100px;
     h2{
         margin: 128px 0 64px;
         @include text-style (48px, 700, 64px);
@@ -103,7 +105,7 @@
                 z-index: 1;
     
                 div{
-                    background:$lnr-grd;
+                     background:$lnr-grd;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;

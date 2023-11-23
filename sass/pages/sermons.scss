@@ -31,6 +31,9 @@
 #upcoming__sermons {
   text-align: center;
   margin: 115px 0px 64px 0px;
+  @media (max-width:450px) {
+    margin-bottom: 150px;
+  }
   .upcoming__header {
     margin-bottom: 64px;
   }
@@ -60,6 +63,11 @@
     padding: 61px 90px;
     text-align: start;
     background-color: #fff5eb;
+    @media (max-width:450px) {
+      max-width: 400px;
+      width: 100%;
+      display: block;
+    }
     .p-one {
       font-family: Roboto Condensed;
       font-size: 12px;
@@ -123,6 +131,9 @@
   .man-woman {
     width: 100%;
     background-size: cover;
+    @media (max-width:450px) {
+      display: none;
+    }
   }
 }
 .view-all {
