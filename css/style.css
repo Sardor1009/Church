@@ -2655,6 +2655,9 @@ footer {
 }
 
 .visit__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1500px;
   height: 736px;
   margin-left: auto;
@@ -2663,9 +2666,6 @@ footer {
   background-image: url("../../image/home/Church/https_/www.pexels.com/photo/facade-of-aged-grand-cathedral-with-dome-on-river-shore-5273642.png");
 }
 
-.visit {
-  position: relative;
-}
 .visit h2,
 .visit p {
   color: #161722;
@@ -2674,7 +2674,6 @@ footer {
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -0.48px;
-  padding-top: 128px;
   background-color: #FFFFFF;
 }
 @media (max-width: 400px) {
@@ -2699,7 +2698,8 @@ footer {
 }
 .visit__row {
   position: absolute;
-  z-index: 0;
+  top: 128px;
+  right: 366px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2711,6 +2711,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   max-width: 768px;
+  padding: 80px;
   background-color: #FFFFFF;
 }
 @media (max-width: 700px) {

@@ -386,6 +386,8 @@
 
 // ------VISIT STARTED........------
 .visit__image {
+  position: relative;
+  display: flex;
   max-width: 1500px;
   height: 736px;
   margin-left: auto;
@@ -395,8 +397,6 @@
 }
 
 .visit {
-  position: relative;
-
   h2,
   p {
     color: $home-relevant;
@@ -405,7 +405,6 @@
     font-weight: 700;
     line-height: 64px;
     letter-spacing: -0.48px;
-    padding-top: 128px;
     background-color: $white-color;
   }
   h2 {
@@ -422,14 +421,32 @@
     color: $black--header;
   }
   &__row {
+    border-bottom: 16px solid $color-border_bottom;
     position: absolute;
-    z-index: 0;
+    top: calc(100vh * 0.1);
+    right: calc(100vw * 0.15 - 10px);
+    
+
     @include dflex($justify: start, $gap: 117px);
-    max-width: 768px;
+    max-width: calc(100vw * 0.8);
+    width: calc(100vw * 0.7);
+    padding: 80px;
     background-color: $white-color;
-    @media (max-width: 700px) {
-      @include grid-all($column: 1);
+    @media (max-width: 1100px) {
+      @include grid-all($column: 1, $gap: 50px);
+      text-align: center;
       justify-items: center;
+    }
+    @media (max-width: 700px) {
+      padding: 30px;
+      .visit__row__right h2{
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .visit__row__right button {
+        padding: 10px 20px;
+        font-size: 10px;
+      }
     }
     // border-bottom: 16px solid $primary-color;
     p {
@@ -437,27 +454,25 @@
     }
   }
 }
+.visit__row__left img {
+  width: 100%;
+}
 
 // ---------------innovation__-____------_-
 
 .innovation {
-
-  &__box{
+  &__box {
     @include grid-all($column: 4, $gap: 24px);
     @media (max-width: 1100px) {
-      @include grid-all ($column: 2, $gap: 30px);
+      @include grid-all($column: 2, $gap: 30px);
       justify-items: center;
-      
     }
     @media (max-width: 600px) {
       @include grid-all($column: 1, $gap: 40px);
       justify-items: center;
     }
-   
   }
 
- 
-  
   padding: 128px 0;
   h5,
   h3 {
@@ -483,7 +498,7 @@
   }
   &__things {
     max-width: 302px;
-    padding:  48px 32px;
+    padding: 48px 32px;
     background-color: $home__row;
     p:nth-child(1) {
       font-family: Roboto Condensed;
@@ -516,7 +531,7 @@
       padding-bottom: 4px;
     }
     p:nth-child(5) {
-      color:$home-relevant;
+      color: $home-relevant;
       font-family: Roboto Condensed;
       font-size: 16px;
       line-height: 24px;
