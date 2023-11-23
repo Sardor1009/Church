@@ -31,13 +31,6 @@ a {
 button {
   background: transparent;
   border: none;
-<<<<<<< HEAD
-=======
-  cursor: pointer;
-}
-
-button {
->>>>>>> 5c4e5cc33a245a1517c7e046730e83d13f500f05
   cursor: pointer;
 }
 
@@ -75,6 +68,11 @@ button {
   text-align: center;
   margin: 115px 0px 64px 0px;
 }
+@media (max-width: 450px) {
+  #upcoming__sermons {
+    margin-bottom: 150px;
+  }
+}
 #upcoming__sermons .upcoming__header {
   margin-bottom: 64px;
 }
@@ -105,6 +103,13 @@ button {
   padding: 61px 90px;
   text-align: start;
   background-color: #fff5eb;
+}
+@media (max-width: 450px) {
+  .upcoming__main .upcoming__main__text {
+    max-width: 400px;
+    width: 100%;
+    display: block;
+  }
 }
 .upcoming__main .upcoming__main__text .p-one {
   font-family: Roboto Condensed;
@@ -175,6 +180,11 @@ button {
 .upcoming__main .man-woman {
   width: 100%;
   background-size: cover;
+}
+@media (max-width: 450px) {
+  .upcoming__main .man-woman {
+    display: none;
+  }
 }
 
 .view-all {
