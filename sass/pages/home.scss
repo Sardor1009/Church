@@ -201,6 +201,9 @@
     letter-spacing: -0.48px;
     margin-top: 16px;
     margin-bottom: 64px;
+    @media (max-width: 400px) {
+      font-size: 30px;
+    }
   }
   &__row {
     display: grid;
@@ -322,17 +325,20 @@
 
   h2,
   p {
-    max-width: 302px;
+   
     color: $home-relevant;
     font-family: Roboto Condensed;
     font-size: 48px;
     font-weight: 700;
     line-height: 64px;
     letter-spacing: -0.48px;
-padding-top: 128px;
-background-color: red;
-
-   
+    padding-top: 128px;
+    background-color: $white-color;
+  }
+  h2 {
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
   }
   p {
     font-size: 16px;
@@ -343,11 +349,13 @@ background-color: red;
     color: $black--header;
   }
   &__row {
-    
     position: absolute;
-     @include dflex($justify: start, $gap: 117px);
+    @include dflex($justify: start, $gap: 117px);
     max-width: 768px;
     background-color: $white-color;
+    @media ( max-width: 700px) {
+      @include grid-all ($column: 1)
+    }
     // border-bottom: 16px solid $primary-color;
     p {
       margin: 16px 0;

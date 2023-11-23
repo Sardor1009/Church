@@ -485,6 +485,11 @@ header {
   margin-top: 16px;
   margin-bottom: 64px;
 }
+@media (max-width: 400px) {
+  .benefit h3 {
+    font-size: 30px;
+  }
+}
 .benefit__row {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -633,7 +638,6 @@ header {
 }
 .visit h2,
 .visit p {
-  max-width: 302px;
   color: #161722;
   font-family: Roboto Condensed;
   font-size: 48px;
@@ -641,7 +645,12 @@ header {
   line-height: 64px;
   letter-spacing: -0.48px;
   padding-top: 128px;
-  background-color: red;
+  background-color: #FFFFFF;
+}
+@media (max-width: 400px) {
+  .visit h2 {
+    font-size: 25px;
+  }
 }
 .visit p {
   font-size: 16px;
@@ -672,6 +681,13 @@ header {
           align-items: center;
   max-width: 768px;
   background-color: #FFFFFF;
+}
+@media (max-width: 700px) {
+  .visit__row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
 }
 .visit__row p {
   margin: 16px 0;
