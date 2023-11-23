@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Manrope&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
+* {
+  font-family: Roboto Condensed;
+}
+
 .container {
   max-width: 1320px;
   margin-left: auto;
