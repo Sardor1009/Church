@@ -209,6 +209,11 @@ footer {
   text-align: center;
   margin: 115px 0px 64px 0px;
 }
+@media (max-width: 450px) {
+  #upcoming__sermons {
+    margin-bottom: 150px;
+  }
+}
 #upcoming__sermons .upcoming__header {
   margin-bottom: 64px;
 }
@@ -239,6 +244,13 @@ footer {
   padding: 61px 90px;
   text-align: start;
   background-color: #fff5eb;
+}
+@media (max-width: 450px) {
+  .upcoming__main .upcoming__main__text {
+    max-width: 400px;
+    width: 100%;
+    display: block;
+  }
 }
 .upcoming__main .upcoming__main__text .p-one {
   font-family: Roboto Condensed;
@@ -309,6 +321,11 @@ footer {
 .upcoming__main .man-woman {
   width: 100%;
   background-size: cover;
+}
+@media (max-width: 450px) {
+  .upcoming__main .man-woman {
+    display: none;
+  }
 }
 
 .view-all {
