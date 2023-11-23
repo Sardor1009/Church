@@ -4,6 +4,7 @@ header {
   width: 100%;
   background-color: $black--header;
   padding: 4px 0;
+  z-index: 1;
 }
 .nav {
   &__logo {
@@ -49,6 +50,7 @@ header {
   @include dflex($justify: center);
   flex-direction: column;
   transition: 1s;
+  z-index: 1;
 
   li {
     width: calc(100vw - 80px);
