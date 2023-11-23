@@ -2,19 +2,25 @@
 @import "../base/variables";
 
 
-@mixin btn() {
+@mixin btn($padding: 20px 48px, $color: white, $bc: #FFD2A4) {
   border-radius: 12px;
-  background: $primary-color;
-  backdrop-filter: blur(40px);
-  padding: 20px 48px;
+  background: $bc;
+  padding: $padding;
   color: $black-color;
   font-family: Roboto Condensed;
   font-size: 16px;
-  line-height: 16px; 
+  line-height: 16px;
+  color: $color;
 }
-@mixin dflex ($justify: space-between, $gap: 0) {
+@mixin dflex ($justify: space-between, $gap: 0, $align: center) {
   display: flex;
   justify-content: $justify;
   gap: $gap;
-  align-items: center;
+  align-items: $align;
+}
+@mixin grid-all($column: 3, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($column, 1fr);
+  gap: $gap;
+  
 }

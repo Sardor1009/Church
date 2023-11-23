@@ -1,0 +1,22 @@
+@import "./variables";
+
+
+@mixin btn ($padding:24px 64px, $br-rd:12px, $color:$primary-color) {
+    padding: 24px 64px ;
+    border-radius: 12px;
+    background: $color;
+    border: none;
+}
+
+@mixin text-style ($ft-sz:16px, $ft-wgt: 400, $ln-hgt:24px, $color:$black-color ) {
+    font-size: $ft-sz;
+    font-weight: $ft-wgt;
+    line-height: $ln-hgt;
+    color: $color;
+}
+
+@mixin flex ($flex:flex, $just-con:space-between, $align-items:center) {
+    display: $flex;
+    justify-content: $just-con;
+    align-items: $align-items;
+}

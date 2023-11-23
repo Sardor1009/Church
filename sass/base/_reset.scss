@@ -1,3 +1,6 @@
+@import "../layout/container";
+@import "../base/mixin";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +9,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-}
-.container {
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 ul {
