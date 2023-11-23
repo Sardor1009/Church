@@ -399,6 +399,7 @@
 .visit {
   h2,
   p {
+   max-width: 370px;
     color: $home-relevant;
     font-family: Roboto Condensed;
     font-size: 48px;
@@ -423,11 +424,12 @@
   &__row {
     border-bottom: 16px solid $color-border_bottom;
     position: absolute;
-    top: calc(100vh * 0.1);
+    top: calc(100vh * 0.05);
+    bottom: calc(100vh * 0.05);
     right: calc(100vw * 0.15 - 10px);
     
 
-    @include dflex($justify: start, $gap: 117px);
+    @include dflex($justify: space-between, $gap: 117px);
     max-width: calc(100vw * 0.8);
     width: calc(100vw * 0.7);
     padding: 80px;
@@ -437,16 +439,24 @@
       text-align: center;
       justify-items: center;
     }
-    @media (max-width: 700px) {
-      padding: 30px;
+    @media (max-width: 750px) {
+      padding: 45px;
+      font-weight: 700;
       .visit__row__right h2{
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 35px;
+        line-height: 40px;
       }
       .visit__row__right button {
         padding: 10px 20px;
         font-size: 10px;
       }
+      @media (max-width: 350px) {
+        .visit__row__right h2{
+          font-size: 25px;
+          line-height: 35px;
+        }
+      }
+     
     }
     // border-bottom: 16px solid $primary-color;
     p {

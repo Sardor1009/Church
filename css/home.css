@@ -1146,6 +1146,7 @@ footer {
 
 .visit h2,
 .visit p {
+  max-width: 370px;
   color: #161722;
   font-family: Roboto Condensed;
   font-size: 48px;
@@ -1177,14 +1178,15 @@ footer {
 .visit__row {
   border-bottom: 16px solid #FFD2A4;
   position: absolute;
-  top: 10vh;
+  top: 5vh;
+  bottom: 5vh;
   right: calc(15vw - 10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 117px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1206,17 +1208,24 @@ footer {
     justify-items: center;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .visit__row {
-    padding: 30px;
+    padding: 45px;
+    font-weight: 700;
   }
   .visit__row .visit__row__right h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 35px;
+    line-height: 40px;
   }
   .visit__row .visit__row__right button {
     padding: 10px 20px;
     font-size: 10px;
+  }
+}
+@media (max-width: 750px) and (max-width: 350px) {
+  .visit__row .visit__row__right h2 {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 .visit__row p {
