@@ -49,19 +49,308 @@
 // ---------relevant started-------////
 
 .relevant {
+  * {
+    text-align: center;
+  }
   padding-top: 128px;
   &__row {
     @include grid-all($gap: 24px);
+    @media (max-width: 1010px) {
+      @include grid-all($column: 1);
+      justify-items: center;
+    }
+    &__card {
+      max-width: 411px;
+      padding: 80px;
+      margin-top: 64px;
+      background-color: $home__row;
+      @media (max-width: 400px) {
+        padding: 30px;
+      }
+
+      border-bottom: 16px solid $primary-color;
+      img {
+        padding: 12px;
+        border-radius: 50%;
+        background-color: $primary-color;
+      }
+      h3,
+      p {
+        margin-top: 37px;
+        color: $home-relevant;
+        font-family: Roboto condensed;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.32px;
+      }
+      p {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
   }
   h5,
   h4 {
-    color:  #161722;
+    color: $home-relevant;
     text-align: center;
     font-family: Roboto Condensed;
     font-size: 48px;
     font-weight: 700;
-    line-height: 64px; 
+    line-height: 64px;
     letter-spacing: -0.48px;
     text-transform: uppercase;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+}
+
+// ----------love ---------///
+
+.love {
+  img {
+    width: 100%;
+  }
+  &__a {
+    text-align: center;
+    margin-top: 16px;
+  }
+  padding-top: 128px;
+  padding-bottom: 128px;
+  p,
+  h6,
+  h3,
+  a {
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $home-relevant;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
+  }
+
+  &__pics {
+    margin-top: 104px;
+    @include grid-all($gap: 24px);
+    @media (max-width: 700px) {
+      @include grid-all($column: 1, $gap: 100px);
+      justify-items: center;
+      img {
+        width: 60%;
+      }
+    }
+    button {
+      @include btn;
+      margin-top: -50px;
+      margin-bottom: 48px;
+    }
+    &__all {
+      @include dflex;
+      flex-direction: column;
+      margin-bottom: 64px;
+    }
+  }
+}
+
+// -------benefit---------///
+.benefit {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  @media (max-width: 1230px) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  &__parag {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+  }
+  p,
+  h3 {
+    color: $home-relevant;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  h3 {
+    max-width: 554px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.48px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    @media (max-width: 1000px) {
+      @include grid-all($column: 1, $gap: 50px);
+      justify-items: center;
+    }
+    &__right {
+      max-width: 435px;
+      background-color: $home__row;
+      padding: 32px 32px 60px 90px;
+      @media (max-width: 1230px) {
+        padding: 10px 20px;
+      }
+      @media (max-width: 1000px) {
+        padding: 30px 40px;
+      }
+
+      button {
+        margin-top: 32px;
+        @include btn(
+          $padding: 24px 64px,
+          $color: $primary-color,
+          $bc: $home-relevant
+        );
+        text-transform: uppercase;
+        @media (max-width: 1230px) {
+          padding: 10px 20px;
+        }
+      }
+      h4,
+      p {
+        max-width: 210px;
+        color: $home-relevant;
+        font-family: Roboto Condensed;
+        font-size: 24px;
+        text-align: justify;
+        font-weight: 700;
+        letter-spacing: -0.24px;
+        text-transform: uppercase;
+      }
+      h4 {
+        margin-top: 16px;
+        margin-bottom: 32px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: lowercase;
+      }
+    }
+
+    &__right__top {
+      @include dflex($align: end);
+
+      p:nth-child(1) {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      p:nth-child(2) {
+        color: $home-relevant;
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      h6 {
+        color: $brown__color;
+        font-family: Roboto Condensed;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+      }
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+
+      align-items: start;
+    }
+    &__left img {
+      width: 100%;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+  }
+  &__clock {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-top: 16px;
+    h6 {
+      max-width: 184px;
+      color: $home-relevant;
+      font-family: Roboto Condensed;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+// ------VISIT STARTED........------
+.visit__image {
+  max-width: 1400px;
+  height: 736px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-image: url("../../image/home/Church/https_/www.pexels.com/photo/facade-of-aged-grand-cathedral-with-dome-on-river-shore-5273642.png");
+}
+
+.visit {
+  position: relative;
+
+  h2,
+  p {
+    max-width: 302px;
+    color: $home-relevant;
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.48px;
+padding-top: 128px;
+background-color: red;
+
+   
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  button {
+    @include btn;
+    color: $black--header;
+  }
+  &__row {
+    
+    position: absolute;
+     @include dflex($justify: start, $gap: 117px);
+    max-width: 768px;
+    background-color: $white-color;
+    // border-bottom: 16px solid $primary-color;
+    p {
+      margin: 16px 0;
+    }
   }
 }

@@ -86,17 +86,13 @@ button {
   padding-right: 20px;
 }
 
-button {
-  cursor: pointer;
-}
-
 .sermon__image {
   height: 432px;
   background: url(../../assets/images/sermons/sermon-home-img.png) no-repeat;
   width: 100%;
 }
 .sermon__image .sermon__home__text {
-  padding: 160px 0px 175px;
+  padding: 160px 100px 175px;
 }
 @media (max-width: 450px) {
   .sermon__image .sermon__home__text {
