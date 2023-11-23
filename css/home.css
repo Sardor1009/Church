@@ -235,7 +235,7 @@ header {
 }
 
 .main__home {
-  max-width: 1400px;
+  max-width: 1500px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -448,8 +448,11 @@ header {
   margin-bottom: 64px;
 }
 
-.join {
+#join {
   background-color: #F5F2F0;
+}
+
+.join {
   padding-top: 128px;
   padding-bottom: 128px;
 }
@@ -502,7 +505,9 @@ header {
 .join__row__card {
   position: relative;
 }
-.join__row__card h2, .join__row__card h6, .join__row__card h4 {
+.join__row__card h2,
+.join__row__card h6,
+.join__row__card h4 {
   max-width: 238px;
   position: absolute;
   bottom: 120px;
@@ -705,7 +710,7 @@ header {
 }
 
 .visit__image {
-  max-width: 1400px;
+  max-width: 1500px;
   height: 736px;
   margin-left: auto;
   margin-right: auto;
@@ -773,4 +778,81 @@ header {
 }
 .visit__row p {
   margin: 16px 0;
+}
+
+.innovation {
+  padding: 128px 0;
+}
+.innovation__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24;
+}
+.innovation h5,
+.innovation h3 {
+  color: #161722;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.innovation h3 {
+  max-width: 554px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+@media (max-width: 400px) {
+  .innovation h3 {
+    font-size: 30px;
+  }
+}
+.innovation__things {
+  max-width: 302px;
+  padding: 48px 32px;
+  background-color: #FFF5EB;
+}
+.innovation__things p:nth-child(1) {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  color: #a54e2b;
+  text-transform: uppercase;
+}
+.innovation__things p:nth-child(2) {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+.innovation__things p:nth-child(3) {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 24px;
+}
+.innovation__things p:nth-child(4) {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  padding-top: 48px;
+  padding-bottom: 4px;
+}
+.innovation__things p:nth-child(5) {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 24px;
+}
+.innovation__border__bottom {
+  border-bottom: 16px solid #FFD0A0;
 }
